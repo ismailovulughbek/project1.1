@@ -1,0 +1,495 @@
+@import './font.css';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'DMSans';
+}
+.container{
+  padding: 0 15px ;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header__topic{
+  justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.topic__title{
+  margin: 12px 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #4B5563;
+}
+.exit{
+  position: absolute;
+  top: 8px ;
+  bottom: 8px;
+  right: 40px;
+}
+.header__navbar{
+  background: #00353B;
+}
+.header__begin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+}
+.begin__list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.begin__link{
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin:24px 12px;
+}
+.instruction{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: auto;
+  bottom: auto;
+}
+.insrtuct__search{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-left: 25px;
+}
+.insrtuct__search::before{
+  content: url(../images/search.svg);
+  margin-right: 8px;
+}
+.insrtuct__shop{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-left: 25px;
+}
+.insrtuct__shop::before{
+  content: url(../images/shop.svg);
+  margin-right:8px;
+}
+.instruct__btn{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color:#1F2937;
+  padding: 13px 25px;
+  margin-left: 25px;
+  border: none;
+  outline: none;
+  border-radius:8px;
+  transition: .4s;
+}
+.instruct__btn:hover{
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+.view{
+  background-color: #00353B;
+  height: 768px;
+}
+.view__diarection{
+  padding: 48px 0 80px 0;
+  display: flex;
+  align-items: center;
+}
+.view__left-nav{
+  margin-right: 80px;
+}
+.view__left-title{
+  margin-right: 80px;
+  padding-top: 115px;
+  color: white;
+  width: 598px;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 67px;
+}
+.view__left-text{
+  padding-top: 30px;
+  width: 587px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+}
+.left__watch{
+
+  color: white;
+  margin: 40px 0 50px 0;
+  display: flex;
+  align-items: center;
+}
+.watch__btn{
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background: #22A45A;
+  padding:13px 25px;
+  border: 1px solid #22A45A;
+  outline: none;
+  border-radius: 8px;
+}
+.watch__btn:hover{
+  cursor: pointer;
+}
+.vid__text{
+  margin:0 4px 0 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.left__watch img{
+  cursor: pointer;
+}
+.left__images{
+  display: flex;
+  align-items: center;
+}
+.images__img{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.photo{
+  width: 48px;
+  height: 48px;
+  background: white;
+  padding: 2px;
+}
+.girl1{
+  position: absolute;
+  left: 28px;
+}
+.girl2{
+  position: absolute;
+  right: 28px;
+}
+.girl0{
+  margin: 0 12px;
+}
+.view__left-like{
+  margin-left: 18px;
+}
+.left__like{
+  text-decoration: none;
+}
+.like__text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+/* RIGHT PART */
+.view__right-nav{
+  position: relative;
+  background: url(../images/pop.png) center/cover no-repeat;
+  height: 640px;
+  width: 50%;
+  border-radius: 24px;
+}
+.right__img1{
+  position: absolute;
+  bottom: 135px;
+  left: -87px;
+}
+.right__img2{
+  position: absolute;
+  bottom: 95px;
+  left: -87px;
+}
+.footer__view-end{
+  position: relative;
+  background: #00353B;
+  height: 404px;
+  text-align: center;
+}
+.view__end-text{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+.footer__info{
+  position: absolute;
+  bottom: -190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FCD8CA;
+  border-radius: 24px;
+}
+.begin__info-btn{
+  margin-top: 68px;
+  padding: 4px 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1F2937;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  transition: .3s;
+}
+.begin__info-btn:hover{
+  background: #1F2937;
+  color: white;
+  cursor: pointer;
+}
+.info__title{
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  margin-top: 11px;
+  color: #1F2937;
+}
+.info__text{
+  margin-top: 30px;
+  width: 730px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+.end__info-btn{
+  border: 1px solid #1F2937;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F2937;
+  padding: 13px 25px;
+  margin: 40px 0 65px 0;
+  transition: .3s;
+  border: none;
+}
+.end__info-btn:hover{
+  background: #1F2937;
+  color: white;
+  cursor: pointer;
+
+}
+.premium{
+  padding-top:190px ;
+}
+.premium__view{
+  margin-bottom:128px;
+  display: flex;
+}
+.premium__img{
+  padding-top: 160px;
+}
+.premium__info{
+  margin: 297px 0 269px 128px;
+}
+.premium__title{
+  width: 547px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #1F2937;
+}
+.premium__text{
+  width: 574px;
+  margin-top: 28px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4B5563;
+}
+.premium__button{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+.premium__btn{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 12px 25px 14px 25px;
+  background: #1F2937;
+  border: 1px solid #1F2937;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.premium__btn-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111827;
+  margin-left: 16px;
+}
+.premium__btn-text::after{
+  content: url(../images/pointer.svg);
+  margin-left: 4px;
+  cursor: pointer;
+}
+/* COURSE */
+.course__about{
+  display: flex;
+  justify-content: space-between;
+}
+.about__title{
+  width: 520px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  margin-top: 137px;
+  color: #1F2937;
+}
+.about__text{
+  width: 574px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4B5563;
+  margin-top: 28px;
+}
+.about__button{
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 283px;
+}
+.about__btn{
+  cursor: pointer;
+  border: 1px solid #1F2937;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 12px 25px 14px 25px;
+  background: #1F2937;
+  margin-right: 16px;
+}
+.about__btn-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111827;
+}
+.about__btn-text::after{
+  content: url(../images/pointer.svg);
+  margin-left: 4px;
+  cursor: pointer;
+}
+/* TUGADI */
+.trending{
+  padding: 128px;
+}
+.trending__topic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.trending__btn{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1F2937;
+  padding: 4px 8px;
+  background: #FCD8CA;
+  border-radius: 4px;
+  margin-bottom: 11px;
+}
+.trending__title{
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #1F2937;
+}
+.trending__text{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4B5563;
+  width: 730px;
+  margin-top: 30px;
+  margin-bottom: 63px;
+}
+.shop__box{
+  display: flex;
+  gap: 32px;
+}
+.shop__beginner{
+  position: relative;
+  width: 405px;
+  height: 500px;
+  background: #00353B;
+  border-radius: 16px;
+}
+.shop__price{
+  width: 478px;
+  padding: 32px 188px 0 24px;
+}
+.shop__beginner-btn{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 4px 8px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.shop__beginner-title{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #FFFFFF;
+  margin-top: 16px;
+}
+.shop__beginner-summa{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+.shop__beginner-button{
+  position: absolute;
+  bottom: 32px;
+  left: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #22A45A;
+  border: 1px solid #22A45A;
+  border-radius: 8px;
+  padding: 8px 21px;
+  cursor: pointer;
+}
+.beginner__round-img{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+}
+/* TUGADI */
